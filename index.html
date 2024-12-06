@@ -1,21 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ky">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Күндөлүк чыгымдар</title>
+   <link rel="stylesheet" href="./style.css">
+    
 </head>
 <body>
-    <div class="main">
-    <input type="number" id="income" placeholder="Айына канча акча табасыз?">
-    <input type="number" id="fare" placeholder="Жолго канча акча кетиресиз?">
-    <input type="number" id="forMeat" placeholder="Тамак-аш учун канча акча кетиресиз">
-    <button id="change">Чыгаруу</button>
-    <p id="output"></p>
+    <div class="container">
+        <h3>Күндөлүк чыгымдар</h3>
+        <input type="number" id="expenseValue" placeholder="Чыгымдын суммасы (мис: 150)" />
+        <input type="text" id="expenseReason" placeholder="Чыгымдын себеби (мис: продуктылар)" />
+        <button onclick="addExpense()">Чыгымды кошуу</button>
+
+        <div class="expenses-list" id="expenseList">
+            <!-- Чыгымдар тизмеси бул жерде көрсөтүлөт -->
+        </div>
     </div>
-
-
+    
     <script src="./index.js"></script>
 </body>
 </html>
